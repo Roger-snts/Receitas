@@ -2,3 +2,21 @@
     margin: 0px;
     padding: 0px;
 }
+
+#Menu {
+    background-color: #CC7758;
+}
+
+#Logo {
+    background-color: #FF946E;
+    padding-top: 5px;
+    text-align: center;
+}
+
+#menuItens > li {
+    border-bottom: 2px solid #FF946E !important;
+    margin: 5px 0px;
+    padding: 2px 0px;
+    list-style-type: none;
+    text-align: center;
+}
