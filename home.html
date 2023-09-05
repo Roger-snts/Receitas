@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receitas da Lorena</title>
-    <meta http-equiv="refresh" content="1">
     <link rel="stylesheet" href="./Estilos/style.css">
     <link rel="shortcut icon" href="./Imagens/Icone.png" type="image/x-icon">
 </head>
@@ -26,17 +25,23 @@
 
     <main>
         <article>
-            <ul class="listaSlides">
-                <li class="slide">
-                    <img src="./Imagens/Joy salmao.jpg" alt="">
-                </li>
-                <li class="slide">
-                    <img src="./Imagens/Niguiri salmao.jpg" alt="">
-                </li>
-                <li class="slide">
-                    <img src="./Imagens/Risoto de camarao.jpg" alt="">
-                </li>
-            </ul>
+            <div class="carrossel">
+                <input type="radio" class="slide-controller" name="slide" checked />
+                <input type="radio" class="slide-controller" name="slide" />
+                <input type="radio" class="slide-controller" name="slide" />
+
+                <ul class="listaSlides">
+                    <li class="slide">
+                        <img src="./Imagens/Joy salmao.jpg" alt="" width="400px" height="360px">
+                    </li>
+                    <li class="slide">
+                        <img src="./Imagens/Niguiri salmao.jpg" alt="" width="400px" height="360px">
+                    </li>
+                    <li class="slide">
+                        <img src="./Imagens/Risoto de camarao.jpg" alt="" width="400px" height="360px">
+                    </li>
+                </ul>
+            </div>
         </article>
     </main>
 
