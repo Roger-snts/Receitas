@@ -3,12 +3,16 @@
     padding: 0px;
 }
 
+body {
+    background-color: #f7eee1;
+}
+
 #Menu {
-    background-color: #CC7758;
+    background-color: #FF946E;
 }
 
 #Logo {
-    background-color: #FF946E;
+    background-color: #A60303;
     padding-top: 5px;
     text-align: center;
 }
@@ -19,6 +23,7 @@
     padding: 2px 0px;
     list-style-type: none;
     text-align: center;
+    display: none;
 }
 
 .badge-base{
@@ -30,6 +35,7 @@
 .slide-controller:nth-child(3):checked ~ .listaSlides{--imagem-selecionada: 2;}
 
 .carrossel {
+    padding: 5px;
     overflow: hidden;
     text-align: center;
 }
@@ -49,5 +55,15 @@
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
     width: calc(var(--imagens-totais) * 100%);
-    transition: left 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    transition: left 0.6s ease-in-out;
+}
+
+.figura {
+    box-shadow: 0px 0px 30px #590202;
+}
+
+#temporizador {
+    display: inline;
+    width: 25px;
+    height: 25px;
 }
