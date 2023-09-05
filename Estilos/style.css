@@ -20,3 +20,20 @@
     list-style-type: none;
     text-align: center;
 }
+
+.badge-base{
+    display: inline-block;
+}
+
+.listaSlides {
+    --imagens-totais: 4;
+    
+
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0;
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+}
