@@ -17,6 +17,10 @@ body {
     text-align: center;
 }
 
+#promocoes {
+    margin: 2% 10%;
+}
+
 #menuItens > li {
     border-bottom: 2px solid #FF946E !important;
     margin: 5px 0px;
@@ -62,8 +66,35 @@ body {
     box-shadow: 0px 0px 30px #590202;
 }
 
+.receita {
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+}
+
+.pre-receita {
+    margin: 5%;
+    width: 90%;
+    height: 80%;
+
+    border: 2px solid black;
+    border-radius: 15px 10px;
+    background-color: white;
+}
+
+.picture {
+    margin: 5px;
+}
+
+.descricao {
+    text-align: center;
+    background-color: #ecd2ae;
+    border-radius: 15px;
+    padding: 5px;
+}
+
 #temporizador {
-    display: inline;
     width: 25px;
     height: 25px;
+    margin: 5px 0px;
 }
