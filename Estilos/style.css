@@ -1,27 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
 }
 
 body {
-    background-color: #f7eee1;
+    background-color: #f7eee1 !important;
+    margin: auto;
 }
 
-#Menu {
+h1 {
+    font-size: calc(1.375rem + 1.5vw);
+}
+
+h2 {
+    font-size: calc(1rem + 1.2vw);
+}
+
+#iPrincipal {
+    margin: 10px;
+    padding: 2%;
+}
+
+header {
+    color: #FF946E !important;
+}
+
+#iMenu {
     background-color: #FF946E;
 }
 
-#Logo {
+#iLogo {
     background-color: #A60303;
     padding-top: 5px;
     text-align: center;
 }
 
-#promocoes {
-    margin: 2% 10%;
-}
-
-#menuItens > li {
+#imenuItens > li {
     border-bottom: 2px solid #FF946E !important;
     margin: 5px 0px;
     padding: 2px 0px;
@@ -29,6 +47,8 @@ body {
     text-align: center;
     display: none;
 }
+
+#imenuItens
 
 .slide-controller:nth-child(1):checked ~ .listaSlides{--imagem-selecionada: 0;}
 .slide-controller:nth-child(2):checked ~ .listaSlides{--imagem-selecionada: 1;}
@@ -59,27 +79,31 @@ body {
 }
 
 .figura {
-    box-shadow: 0px 0px 30px #590202;
+    box-shadow: 0px 0px 12px #590202;
 }
 
 .receita {
     display: inline-flex;
+    flex-direction: row;
     overflow: hidden;
     overflow-x: auto;
-    width: 76vw;
+    width: 90vw;
 }
 
 .pre-receita {
-    margin: 5%;
-    width: 100%;
-    height: 80%;
+    margin: 15px;
+    width: 120px;
+    height: 237px;
 
-    border: 2px solid black;
+    border: 2px solid #e98282;
     border-radius: 15px 15px;
     background-color: white;
 }
 
 .picture {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
     margin: 5px;
 }
 
@@ -90,8 +114,26 @@ body {
     padding: 5px;
 }
 
-#temporizador {
+#itemporizador {
     width: 25px;
     height: 25px;
     margin: 5px 0px;
+}
+
+footer {
+    margin: 3%;
+    text-align: justify;
+}
+
+.material-symbols-outlined {
+    display: block;
+    background-color: #590202;
+    color: beige;
+    width: 100%;
+    text-align: center;
+    padding: 7px;
+}
+
+.material-symbols-outlined:hover {
+    background-color: #740303cb;
 }

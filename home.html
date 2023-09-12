@@ -6,14 +6,16 @@
     <title>Receitas da Lorena</title>
     <link rel="stylesheet" href="./Estilos/style.css">
     <link rel="shortcut icon" href="./Imagens/Icone.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
     <header>
-        <div id="Menu">
-            <div id="Logo">
+        <div id="iMenu">
+            <div id="iLogo">
                 <img src="./Imagens/panela-quente.png" alt="Logo do site - Uma panela com legumes." width="80px" height="60px">
             </div>
-            <div id="menuItens">
+            <span class="material-symbols-outlined">menu</span>
+            <div id="imenuItens">
                 <li><a href="">|</a></li>
                 <li><a href="">|</a></li>
                 <li><a href="">|</a></li>
@@ -22,91 +24,107 @@
             </div>
         </div>
     </header>
+    <div id="iPrincipal">
+        <main>
+            <article>
+                <div class="carrossel">
+                    <input type="radio" class="slide-controller" name="slide" checked />
+                    <input type="radio" class="slide-controller" name="slide" />
+                    <input type="radio" class="slide-controller" name="slide" />
+                    <ul class="listaSlides">
+                        <li class="slide">
+                            <img class="figura" src="./Imagens/Joy salmao.jpg" alt="" width="350px" height="300px">
+                        </li>
+                        <li class="slide">
+                            <img class="figura" src="./Imagens/Niguiri salmao.jpg" alt="" width="350px" height="300px">
+                        </li>
+                        <li class="slide">
+                            <img class="figura" src="./Imagens/Risoto de camarao.jpg" alt="" width="350px" height="300px">
+                        </li>
+                    </ul>
+                </div>
+            </article>
 
-    <main id="promocoes">
-        <article>
-            <div class="carrossel">
-                <input type="radio" class="slide-controller" name="slide" checked />
-                <input type="radio" class="slide-controller" name="slide" />
-                <input type="radio" class="slide-controller" name="slide" />
+            <article>
+                <h1>Melhores receitas</h1>
+            </article>
 
-                <ul class="listaSlides">
-                    <li class="slide">
-                        <img class="figura" src="./Imagens/Joy salmao.jpg" alt="" width="400px" height="360px">
-                    </li>
-                    <li class="slide">
-                        <img class="figura" src="./Imagens/Niguiri salmao.jpg" alt="" width="400px" height="360px">
-                    </li>
-                    <li class="slide">
-                        <img class="figura" src="./Imagens/Risoto de camarao.jpg" alt="" width="400px" height="360px">
-                    </li>
-                </ul>
-            </div>
-        </article>
+            <form action="navegate">
+                <fieldset>
+                    <legend>Receitas Doces</legend>
+                    <article class="receita">
+                        <div class="pre-receita">
+                            <div class="picture">
+                                <img src="./Imagens/panela-quente.png" alt="" width="100px" height="100px">
+                            </div>
+                            <div class="descricao">
+                                <h3>Nome da Receita</h3>
+                                <img id="itemporizador" src="./Imagens/relogio.png" alt="">
+                                <p>60 min</p>
+                            </div>
+                        </div>
+                        <div class="pre-receita">
+                            <div class="picture">
+                                <img src="./Imagens/panela-quente.png" alt="" width="100px" height="100px">
+                            </div>
+                            <div class="descricao">
+                                <h3>Nome da Receita</h3>
+                                <img id="itemporizador" src="./Imagens/relogio.png" alt="">
+                                <p>60 min</p>
+                            </div>
+                        </div>
+                        <div class="pre-receita">
+                            <div class="picture">
+                                <img src="./Imagens/panela-quente.png" alt="" width="100px" height="100px">
+                            </div>                        <div class="descricao">
+                                <h3>Nome da Receita</h3>
+                                <img id="itemporizador" src="./Imagens/relogio.png" alt="">
+                                <p>60 min</p>
+                            </div>
+                        </div>
+                    </article>
+                </fieldset>
+            </form>
 
-        <form action="navegate">
-            <fieldset>
-                <legend>Receitas Doces</legend>
-                <article class="receita">
-                    <div class="pre-receita">
-                        <img class="picture" src="./Imagens/panela-quente.png" alt="" width="100px" height="100px">
-                        <div class="descricao">
-                            <h3>Nome da Receita</h3>
-                            <img id="temporizador" src="./Imagens/relogio.png" alt="">
-                            <p>60 min</p>
+            <form action="navegate">
+                <fieldset>
+                    <legend>Receitas Salgadas</legend>
+                    <article class="receita">
+                        <div class="pre-receita">
+                            <div class="picture">
+                                <img src="./Imagens/panela-quente.png" alt="" width="100px" height="100px">
+                            </div>                        <div class="descricao">
+                                <h3>Nome da Receita</h3>
+                                <img id="itemporizador" src="./Imagens/relogio.png" alt="">
+                                <p>60 min</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="pre-receita">
-                        <img class="picture" src="./Imagens/panela-quente.png" alt="" width="100px" height="100px">
-                        <div class="descricao">
-                            <h3>Nome da Receita</h3>
-                            <img id="temporizador" src="./Imagens/relogio.png" alt="">
-                            <p>60 min</p>
+                        <div class="pre-receita">
+                            <div class="picture">
+                                <img src="./Imagens/panela-quente.png" alt="" width="100px" height="100px">
+                            </div>                        <div class="descricao">
+                                <h3>Nome da Receita</h3>
+                                <img id="itemporizador" src="./Imagens/relogio.png" alt="">
+                                <p>60 min</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="pre-receita">
-                        <img class="picture" src="./Imagens/panela-quente.png" alt="" width="100px" height="100px">
-                        <div class="descricao">
-                            <h3>Nome da Receita</h3>
-                            <img id="temporizador" src="./Imagens/relogio.png" alt="">
-                            <p>60 min</p>
+                        <div class="pre-receita">
+                            <div class="picture">
+                                <img src="./Imagens/panela-quente.png" alt="" width="100px" height="100px">
+                            </div>                        <div class="descricao">
+                                <h3>Nome da Receita</h3>
+                                <img id="itemporizador" src="./Imagens/relogio.png" alt="">
+                                <p>60 min</p>
+                            </div>
                         </div>
-                    </div>
-                </article>
-            </fieldset>
-        </form>
-        <form action="navegate">
-            <fieldset>
-                <legend>Receitas Salgadas</legend>
-                <article class="receita">
-                    <div class="pre-receita">
-                        <img class="picture" src="./Imagens/panela-quente.png" alt="" width="100px" height="100px">
-                        <div class="descricao">
-                            <h3>Nome da Receita</h3>
-                            <img id="temporizador" src="./Imagens/relogio.png" alt="">
-                            <p>60 min</p>
-                        </div>
-                    </div>
-                    <div class="pre-receita">
-                        <img class="picture" src="./Imagens/panela-quente.png" alt="" width="100px" height="100px">
-                        <div class="descricao">
-                            <h3>Nome da Receita</h3>
-                            <img id="temporizador" src="./Imagens/relogio.png" alt="">
-                            <p>60 min</p>
-                        </div>
-                    </div>
-                    <div class="pre-receita">
-                        <img class="picture" src="./Imagens/panela-quente.png" alt="" width="100px" height="100px">
-                        <div class="descricao">
-                            <h3>Nome da Receita</h3>
-                            <img id="temporizador" src="./Imagens/relogio.png" alt="">
-                            <p>60 min</p>
-                        </div>
-                    </div>
-                </article>
-            </fieldset>
-        </form>
-    </main>
+                    </article>
+                </fieldset>
+            </form>
+            <article>
+        
+            </article>
+        </main>
+    </div>
 
     <footer>
         Fonte do Ícone: <a href="https://www.flaticon.com/br/icones-gratis/comida" title="comida ícones">Comida ícones criados por amonrat rungreangfangsai - Flaticon</a>
