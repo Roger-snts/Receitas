@@ -8,10 +8,24 @@
     </head>
     <body>
         <header>
-            <h1>ENTRE EM CONTATO CONOSCO</h1>
+            <div id="iMenu">
+                <div id="iLogo">
+                    <img src="./Imagens/panela-quente.png" alt="Logo do site - Uma panela com legumes." width="80px" height="60px">
+                </div>
+                <span class="material-symbols-outlined" onclick="exibirMenu()">menu</span>
+                <div id="imenuItens">
+                    <li><a href="">|</a></li>
+                    <li><a href="">|</a></li>
+                    <li><a href="">|</a></li>
+                    <li><a href="">|</a></li>
+                    <li><a href="">|</a></li>
+                </div>
+            </div>
         </header>
 
         <main>
+            <h1>ENTRE EM CONTATO CONOSCO</h1>
+
             <form action="contato.php">
                 <p><label>Seu email </label><input type="email" name="emailUsuario" id="iemailUsuario"></p><br>
                 <p><label for="isex">Qual gênero você se identifica?</label><input type="checkbox" id="isex" name="sex" value="genero"></p>
