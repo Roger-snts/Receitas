@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receitas da Lorena</title>
     <link rel="stylesheet" href="./Estilos/style.css">
-    <script src="backend.js"></script>
     <link rel="shortcut icon" href="./Imagens/Icone.png" type="image/x-icon">
 </head>
 <body>
@@ -14,14 +13,15 @@
             <div id="iLogo">
                 <img src="./Imagens/panela-quente.png" alt="Logo do site - Uma panela com legumes." width="80px" height="60px">
             </div>
-            <span class="material-symbols-outlined" onclick="exibirMenu()">menu</span>
-            <div id="imenuItens">
-                <li><a href="">|</a></li>
-                <li><a href="">|</a></li>
-                <li><a href="">|</a></li>
-                <li><a href="">|</a></li>
-                <li><a href="">|</a></li>
-            </div>
+            <span id="iBotaoMenu" class="material-symbols-outlined" onclick="exibirMenu()">menu</span>
+            <menu id="iMenuItens">
+                <ul>
+                    <li><a href="./home.html">Início</a></li>
+                    <li><a href="./cadastro.html">Nova receita</a></li>
+                    <li><a href="./quem_somos.html">Quem Somos?</a></li>
+                    <li><a href="./contato.html">Entrar em contato</a></li>
+                </ul>
+            </menu>
         </div>
     </header>
     <div id="iPrincipal">
@@ -130,5 +130,7 @@
         Fonte do Ícone: <a href="https://www.flaticon.com/br/icones-gratis/comida" title="comida ícones">Comida ícones criados por amonrat rungreangfangsai - Flaticon</a>
         <a href="https://www.flaticon.com/br/icones-gratis/relogio" title="relógio ícones">Relógio ícones criados por Kharisma - Flaticon</a>
     </footer>
+
+    <script src="backend.js" defer></script>
 </body>
 </html>
