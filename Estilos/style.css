@@ -10,6 +10,12 @@
     scroll-behavior: smooth;
 }
 
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;	
+}
+
 body {
     background-color: #f7eee1 !important;
     margin: auto;
@@ -55,6 +61,7 @@ menu > ul > li {
 menu > ul > li > a {
     color: black;
     text-decoration: none;
+    user-select: none;
 }
 
 menu > ul > li:hover {
@@ -143,9 +150,16 @@ picture {
     margin: 5px 0px;
 }
 
+fieldset {
+    margin: 10px 5px 10px 0;
+}
+
 footer {
     margin: 3%;
     text-align: justify;
+    background-color: wheat;
+    padding: 0 10px;
+    margin: 0;
 }
 
 .material-symbols-outlined {
@@ -155,6 +169,7 @@ footer {
     width: auto !important;
     text-align: center;
     cursor: pointer;
+    user-select: none;
     padding: 7px;
 }
 
