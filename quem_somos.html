@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="./Estilos/style.css">
     <link rel="stylesheet" href="./Estilos/media-query.css">
 </head>
-<body>
+<body onresize="alterarTamanho()">
     <header>
         <div id="iMenu">
             <div id="iLogo">
-                <img src="./Imagens/panela-quente.png" alt="Logo do site - Uma panela com legumes." width="80px" height="60px">
+                <img src="./Imagens/panela-quente.png" alt="Logo do site - Uma panela com legumes." width="60px" height="60px">
+                <h2 id="titulo">Receitas da Lorena</h2>
             </div>
             <span class="material-symbols-outlined" onclick="exibirMenu()">menu</span>
             <menu id="iMenuItens">

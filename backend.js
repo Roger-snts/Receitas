@@ -2,7 +2,7 @@
 let menu = document.getElementById("iMenuItens")
 
 function alterarTamanho(){
-    if (window.innerWidth >= 720){
+    if (window.innerWidth >= 895){
         menu.style.display = "block";
     } else {
         menu.style.display = "none";
