@@ -6,12 +6,14 @@
     <link rel="shortcut icon" href="./Imagens/Icone.png" type="image/x-icon">
     <title>Receitas da Lorena</title>
     <link rel="stylesheet" href="./Estilos/style.css">
+    <link rel="stylesheet" href="./Estilos/media-query.css">
 </head>
-<body>
+<body onresize="alterarTamanho()">
     <header>
         <nav id="iMenu">
             <div id="iLogo">
                 <img src="./Imagens/panela-quente.png" alt="Logo do site - Uma panela com legumes." width="80px" height="60px">
+                <h2 id="titulo">Receitas da Lorena</h2>
             </div>
             <span id="iBotaoMenu" class="material-symbols-outlined" onclick="exibirMenu()">menu</span>
             <menu id="iMenuItens">
@@ -29,8 +31,8 @@
         <article>
             <div class="carrossel">
                 <input type="radio" class="slide-controller" name="slide" checked />
-                <input type="radio" class="slide-controller" name="slide" />
-                <input type="radio" class="slide-controller" name="slide" />
+                <input type="radio" class="slide-controller" name="slide"/>
+                <input type="radio" class="slide-controller" name="slide"/>
                 <ul class="listaSlides">
                     <li class="slide">
                         <img class="figura" src="./Imagens/Joy salmao.jpg" alt="" width="350px" height="300px">

@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;	
+}
+
+body {
+    background-color: #f7eee1 !important;
+    margin: auto;
+}
+
+h1 {
+    font-size: calc(1.375rem + 1.5vw);
+}
+
+h2 {
+    font-size: calc(1rem + 1.2vw);
+}
+
+main {
+    margin: 10px;
+    padding: 2%;
+}
+
+header {
+    color: #FF946E !important;
+}
+
+/* Cabeçalho */
+
+#iMenu {
+    background-color: #FF946E;
+}
+
+#iLogo {
+    background-color: #A60303;
+    padding-top: 5px;
+    text-align: center;
+}
+
+menu {
+    display: none;
+    text-align: center;
+}
+
+menu > ul > li {
+    cursor: pointer;
+    border-bottom: 2px solid rgb(162, 61, 33);
+}
+
+menu > ul > li > a {
+    color: black;
+    text-decoration: none;
+    user-select: none;
+}
+
+menu > ul > li:hover {
+    background-color: #bf522e;
+}
+
+.material-symbols-outlined {
+    display: block;
+    background-color: #590202;
+    color: beige;
+    width: auto !important;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    padding: 7px;
+}
+
+.material-symbols-outlined:hover {
+    background-color: #740303cb;
+}
+
+/* Parte dos ingredientes da receita */
+
+.receita {
+    display: inline-flex;
+    flex-direction: row;
+    overflow: hidden;
+    overflow-x: auto;
+    width: 90vw;
+}
+
+p {
+    display: inline-block;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Fim da página */
+
+footer {
+    margin: 3%;
+    text-align: justify;
+    background-color: wheat;
+    padding: 0 10px;
+    margin: 0;
+}
