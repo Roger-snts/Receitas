@@ -5,7 +5,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif !important;
     font-size: 16px;
     scroll-behavior: smooth;
 }
@@ -22,11 +22,11 @@ body {
 }
 
 h1 {
-    font-size: calc(1.375rem + 1.5vw);
+    font-size: calc(1.375rem + 1.5vw) !important;
 }
 
 h2 {
-    font-size: calc(1rem + 1.2vw);
+    font-size: calc(1rem + 1.2vw) !important;
 }
 
 main {

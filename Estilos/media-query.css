@@ -25,6 +25,9 @@
 
     h1 {
         font-size: calc(1.375rem + 1.5vw);
+        font-size: 2em;
+        font-weight: 300;
+        color: #df6f46;
     }
 
     h2 {

@@ -1,56 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="./Imagens/Icone.png" type="image/x-icon">
-        <title>Cadastro</title>
-        <link rel="stylesheet" href="./Estilos/style.css">
-        <link rel="stylesheet" href="./Estilos/media-query.css">
-        
-    </head>
-    <body onresize="alterarTamanho()">
-        <header>
-            <div id="iMenu">
-                <div id="iLogo">
-                    <img src="./Imagens/panela-quente.png" alt="Logo do site - Uma panela com legumes." width="60px" height="60px">
-                    <h2 id="titulo">Receitas da Lorena</h2>
-                </div>
-                <span class="material-symbols-outlined" onclick="exibirMenu()">menu</span>
-                <menu id="iMenuItens">
-                    <ul>
-                        <li><a href="./home.html">Início</a></li>
-                        <li><a href="./cadastro.html">Nova receita</a></li>
-                        <li><a href="./quem_somos.html">Quem Somos?</a></li>
-                        <li><a href="./contato.html">Entrar em contato</a></li>
-                    </ul>
-                </menu>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
+    <link rel="shortcut icon" href="./Imagens/Icone.png" type="image/x-icon">
+    <title>Cadastro</title>
+    <link rel="stylesheet" media="screen" href="./Estilos/style.css">
+    <link rel="stylesheet" href="./Estilos/media-query.css">
+</head>
+<body onresize="alterarTamanho()">
+    <header>
+        <nav id="iMenu">
+            <div id="iLogo">
+                <img src="./Imagens/panela-quente.png" alt="Logo do site - Uma panela com legumes." width="60px" height="60px">
+                <h2 id="titulo">Receitas da Lorena</h2>
             </div>
-        </header>
+            <span id="iBotaoMenu" class="material-symbols-outlined" onclick="exibirMenu()">menu</span>
+            <menu id="iMenuItens">
+                <ul>
+                    <li><a href="./home.html">Início</a></li>
+                    <li><a href="./cadastro.html">Nova receita</a></li>
+                    <li><a href="./quem_somos.html">Quem Somos?</a></li>
+                    <li><a href="./contato.html">Entrar em contato</a></li>
+                </ul>
+            </menu>
+        </nav>
+    </header>
 
-        <main>
-            <h1>Cadastre uma nova receita</h1>
-        
-            <p>Compartilhe conosco sua receita predileta. Estamos ansiosos para testá-la.</p><br>  
+    <main>
+        <h1>Cadastre uma nova receita</h1>
+        <p>Compartilhe conosco sua receita predileta. Estamos ansiosos para testá-la.</p><br>  
 
-            <form>
-                <p><label>Nome do prato </label><input type="text" name="nomePrato" id="inomePrato"></p><br>
-                <p><label>Ingredientes </label><input type="text" name="ingredientesPrato" id="iingredientesPrato"></p><br>
-                <p><label>Modo de Preparo </label><input type="text" placeholder="Digite aqui o passo a passo" size=100%></p><br>
-                <p><label>Foto da receita pronta </label><input type="file" name="fotoPrato" id="ifotoPrato"></p>
-                <p>Observação: Envie uma imagem no formato jpeg (.jpg)</p><br>
-                
-                <p><input type="button" onclick="alert('Cadastro realizado com sucesso')" value="Cadastrar"></p><br>
-            </form>
+        <form>
+            <p><label>Nome do prato </label><input type="text" name="nomePrato" id="inomePrato"></p><br>
+            <p><label>Ingredientes </label><input type="text" name="ingredientesPrato" id="iingredientesPrato"></p><br>
+            <p><label>Modo de Preparo </label><input type="text" placeholder="Digite aqui o passo a passo" size=100%></p><br>
+            <p><label>Foto da receita pronta </label><input type="file" name="fotoPrato" id="ifotoPrato"></p>
+            <p>Observação: Envie uma imagem no formato jpeg (.jpg)</p><br>
             
-              
-
-        </main>
-
-        <footer>
-            <img src="./imagens/chapeu-chef.png" alt="Chapéu de Chef" height="15px" width="15px"> Site de Receitas criado por Lorena Etiene e Moacir Roger - Todos os direitos reservados.
-        </footer>
-
-        <script src="backend.js" defer></script>
-    </body>
+            <p><input type="button" onclick="alert('Cadastro realizado com sucesso')" value="Cadastrar"></p><br>
+        </form>
+    </main>
+    
+    <footer>
+        <img src="./imagens/chapeu-chef.png" alt="Chapéu de Chef" height="15px" width="15px"> Site de Receitas criado por Lorena Etiene e Moacir Roger - Todos os direitos reservados.
+    </footer>
+    
+    <script src="backend.js" defer></script>
+</body>
 </html>
