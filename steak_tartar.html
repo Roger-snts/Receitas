@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Imagens/Icone.png" type="image/x-icon">
+    <title>Receitas da Lorena - Kafta no espeto</title>
+    <link rel="stylesheet" href="Estilos/style.css">
+</head>
+<body onresize="alterarTamanho()">
+    <header>
+        <nav id="iMenu">
+            <div id="iLogo">
+                <img src="./Imagens/panela-quente.png" alt="Logo do site - Uma panela com legumes." width="60px" height="60px">
+                <h2 id="titulo">Receitas da Lorena</h2>
+            </div>
+            <span id="iBotaoMenu" class="material-symbols-outlined" onclick="exibirMenu()">menu</span>
+            <menu id="iMenuItens">
+                <ul>
+                    <li><a href="./home.html">Início</a></li>
+                    <li><a href="./cadastro.html">Nova receita</a></li>
+                    <li><a href="./quem_somos.html">Quem Somos?</a></li>
+                    <li><a href="./contato.html">Entrar em contato</a></li>
+                </ul>
+            </menu>
+        </nav>
+    </header>
+
+    <main>
+        <iframe width="100%" height="360px" src="./Imagens/steak_tartar.jpg" title="Steak Tartar" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+        <article title="Ingredientes" style="background-color: #e0d2cc;">
+            <legend>Ingredientes</legend>
+            <ul style="padding: 0 25px;">
+                <section>
+                    <li>100 gramas de espaguete</li>
+                    <li>200 gramas de filé mignon black angus cortado na ponta da faca</li>
+                    <li>20 gramas de cebola</li>
+                    <li>15 gramas de pepino francês cornichon (vem em vidro – marca francesa)</li>
+                    <li>10 gramas de alcaparra</li>
+                    <li>1 colher de sopa de ketchup</li>
+                    <li>1 colher de sopa de mostarda Dijon</li>
+                    <li>1 colher de sopa de maionese</li>
+                    <li>pimenta Tabasco a gosto</li>
+                    <li>molho inglês a gosto</li>
+                    <li>ciboulette (cebolinha francesa) a gosto</li>
+                    <li>salsinha picada a gosto</li>
+                    <li>flor de sal a gosto</li>
+                    <li>pimenta branca moída na hora a gosto</li>
+                </section>
+            </ul>
+        </article>
+        <br>
+        <article>
+            <legend>Modo de Preparo</legend>
+            <ol style="padding: 0 25px;">
+                <li>Corte a cebola (sem repicar para não ficar amargo e com cortes de tamanhos diferentes);</li>
+                <li>Corte o pepino cornichon, a alcaparra, a salsinha e a ciboulette bem picados;</li>
+                <li>Corte o filé mignon em fatias bem finas e pique de uma vez só;</li>
+                <li>Coloque o filé mignon picado dentro de um bowl colocado sobre outro bowl com gelo;</li>
+                <li>Coloque todos os ingredientes no bowl e misture com uma colher cortando a carne bem rápido.</li>
+            </ol>
+        </article>
+    </main>
+
+    <footer>
+        <p><img src="./imagens/chapeu-chef.png" alt="Chapéu de Chef" height="15px" width="15px"> Site de Receitas criado por Lorena Etiene e Moacir Roger - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="backend.js" defer></script>
+</body>
+</html>
