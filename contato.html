@@ -1,55 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="./Imagens/Icone.png" type="image/x-icon">
-        <title>Contato</title>
-        <link rel="stylesheet" media="screen" href="./Estilos/style.css">
-        <link rel="stylesheet" href="./Estilos/media-query.css">
-    </head>
-    <body onresize="alterarTamanho()">
-        <header>
-            <div id="iMenu">
-                <div id="iLogo">
-                    <img src="./Imagens/panela-quente.png" alt="Logo do site - Uma panela com legumes." width="60px" height="60px">
-                    <h2 id="titulo">Receitas da Lorena</h2>
-                </div>
-                <span class="material-symbols-outlined" onclick="exibirMenu()">menu</span>
-                <menu id="iMenuItens">
-                    <ul>
-                        <li><a href="./home.html">Início</a></li>
-                        <li><a href="./cadastro.html">Nova receita</a></li>
-                        <li><a href="./quem_somos.html">Quem Somos?</a></li>
-                        <li><a href="./contato.html">Entrar em contato</a></li>
-                    </ul>
-                </menu>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Imagens/Icone.png" type="image/x-icon">
+    <title>Contato</title>
+    <link rel="stylesheet" media="screen" href="./Estilos/style.css">
+    <link rel="stylesheet" href="./Estilos/media-query.css">
+</head>
+<body onresize="alterarTamanho()">
+    <header>
+        <nav id="iMenu">
+            <div id="iLogo">
+                <img src="./Imagens/panela-quente.png" alt="Logo do site - Uma panela com legumes." width="60px" height="60px">
+                <h2 id="titulo">Receitas da Lorena</h2>
             </div>
-        </header>
+            <span class="material-symbols-outlined" onclick="exibirMenu()">menu</span>
+            <menu id="iMenuItens">
+                <ul>
+                    <li><a href="./home.html">Início</a></li>
+                    <li><a href="./cadastro.html">Nova receita</a></li>
+                    <li><a href="./quem_somos.html">Quem Somos?</a></li>
+                    <li><a href="./contato.html">Entrar em contato</a></li>
+                </ul>
+            </menu>
+        </div>
+    </header>
 
-        <main>
-            <h1>ENTRE EM CONTATO CONOSCO</h1>
+    <main>
+        <h1>ENTRE EM CONTATO CONOSCO</h1>
 
-            <form action="contato.php">
-                <p><label>Seu email </label><input type="email" name="emailUsuario" id="iemailUsuario"></p><br>
-                <p><label>Telefone </label><input type="telefone" name="telefonelUsuario" id="itelefonelUsuario"></p><br>
-                <p><label>Mensagem </label><input type="text" placeholder="Digite aqui a sua mensagem" size=100%></p><br>
-                
-                <p><input type="button" onclick="alert('Enviado com sucesso')" value="Enviar"></p><br>
-            </form>
+        <form action="contato.php">
+            <p><label>Seu email </label><input type="email" name="emailUsuario" id="iemailUsuario"></p><br>
+            <p><label>Telefone </label><input type="telefone" name="telefonelUsuario" id="itelefonelUsuario"></p><br>
+            <p><label>Mensagem </label><input type="text" placeholder="Digite aqui a sua mensagem" size=100%></p><br>
             
-            <p>
-                Fique a vontade para tirar dúvidas, dar sugestões ou abrir uma reclamação.
-                Em breve entraremos em contato.
-            </p>
-            <br>    
+            <p><input type="button" onclick="alert('Enviado com sucesso')" value="Enviar"></p><br>
+        </form>
+        
+        <p>
+            Fique a vontade para tirar dúvidas, dar sugestões ou abrir uma reclamação.
+            Em breve entraremos em contato.
+        </p>
+        <br>    
 
-        </main>
+    </main>
 
-        <footer>
-            <img src="./imagens/chapeu-chef.png" alt="Chapéu de Chef" height="15px" width="15px"> Site de Receitas criado por Lorena Etiene e Moacir Roger - Todos os direitos reservados.
-        </footer>
+    <footer>
+        <img src="./imagens/chapeu-chef.png" alt="Chapéu de Chef" height="15px" width="15px"> Site de Receitas criado por Lorena Etiene e Moacir Roger - Todos os direitos reservados.
+    </footer>
 
-        <script src="backend.js" defer></script>
-    </body>
+    <script src="backend.js" defer></script>
+</body>
 </html>
