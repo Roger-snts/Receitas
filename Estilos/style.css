@@ -100,10 +100,18 @@ menu > ul > li:hover {
     transition: left 0.6s ease-in-out;
 }
 
-.figura {
-    box-shadow: 0px 0px 12px #590202;
-    border-radius: 10px;
-    position: left;
+.figuras {
+    border-radius: 30px;
+    transition: tamanho 1s;
+}
+
+@keyframes tamanho {
+    0% {
+        size: 100%;
+    }
+    100% {
+        size: 150%;
+    }
 }
 
 legend {
@@ -145,15 +153,18 @@ picture {
 
 .descricao {
     text-align: center;
-    background-color: #ecd2ae;
+    border-top: 2px #e7d3b8 solid;
     border-radius: 15px;
     padding: 5px;
+    font-size: small;
+    font-style: normal;
 }
 
 #itemporizador {
     width: 25px;
     height: 25px;
     margin: 5px 0px;
+    align-content: baseline;
 }
 
 fieldset {

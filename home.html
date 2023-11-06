@@ -6,7 +6,10 @@
     <link rel="shortcut icon" href="./Imagens/Icone.png" type="image/x-icon">
     <title>Receitas da Lorena</title>
     <link rel="stylesheet" media="screen" href="./Estilos/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <link rel="stylesheet" href="./Estilos/media-query.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body onresize="alterarTamanho()">
     <header>
@@ -17,7 +20,7 @@
             </div>
             <span id="iBotaoMenu" class="material-symbols-outlined" onclick="exibirMenu()">menu</span>
             <menu id="iMenuItens">
-                <ul>
+                <ul style="margin: 0px; padding: 0px;">
                     <li><a href="./home.html">Início</a></li>
                     <li><a href="./cadastro.html">Nova receita</a></li>
                     <li><a href="./quem_somos.html">Quem Somos?</a></li>
@@ -29,22 +32,44 @@
 
     <main id="iPrincipal">
         <article>
-            <div class="carrossel">
-                <input type="radio" class="slide-controller" name="slide" checked />
-                <input type="radio" class="slide-controller" name="slide"/>
-                <input type="radio" class="slide-controller" name="slide"/>
-                <ul class="listaSlides">
-                    <li class="slide">
-                        <img class="figura" src="./Imagens/Joy salmao.jpg" alt="" width="350px" height="300px">
-                    </li>
-                    <li class="slide">
-                        <img class="figura" src="./Imagens/Niguiri salmao.jpg" alt="" width="350px" height="300px">
-                    </li>
-                    <li class="slide">
-                        <img class="figura" src="./Imagens/Risoto de camarao.jpg" alt="" width="350px" height="300px">
-                    </li>
-                </ul>
-            </div>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="1000">
+                    <img src="./Imagens/carbonara.jpg" class="d-block w-100" height="250" alt="Joy de salmão">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Carbonara</h5>
+                        <p>Um prato tradicional italiano na sua mesa: essa receita de carbonara promete momentos irresistíveis!...</p>
+                      </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./Imagens/lasanha-bolonhesa.jpg" class="d-block w-100" height="250" alt="Niguiri de salmão">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Lasanha à bolonhesa</h5>
+                        <p>Simples, prático e principalmente delicioso!</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./Imagens/ravioli.jpg" class="d-block w-100" height="250" alt="Risoto de camarão">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Ravioli</h5>
+                        <p>Fino e elegante, este ravioli de carne com certeza vai te surpreender!</p>
+                      </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </article>
 
         <article>
@@ -56,36 +81,36 @@
                 <legend>Receitas Doces</legend>
                 <article class="receita">
                     <div class="pre-receita">
-                        <a href="./home.html">
+                        <a href="./Receitas/kafta.html">
                             <picture>
-                                <img src="./Imagens/panela-quente.png" alt="" width="100px" height="100px">
+                                <img class="figuras" src="./Imagens/cookie.jpg" alt="" width="100px" height="100px">
                             </picture>
                             <div class="descricao">
-                                <h3>Nome da Receita</h3>
+                                <h4>Cookie</h4>
                                 <img id="itemporizador" src="./Imagens/relogio.png" alt="">
-                                <p>60 min</p>
+                                <p>45 min</p>
                             </div>
                         </a>
                     </div>
                     <div class="pre-receita">
                         <a href="./home.html">
                             <picture>
-                                <img src="./Imagens/panela-quente.png" alt="" width="100px" height="100px">
+                                <img class="figuras" src="./Imagens/crepe.jpg" alt="" width="100px" height="100px">
                             </picture>
                             <div class="descricao">
-                                <h3>Nome da Receita</h3>
+                                <h4>Crepe</h4>
                                 <img id="itemporizador" src="./Imagens/relogio.png" alt="">
-                                <p>60 min</p>
+                                <p>20 min</p>
                             </div>
                         </a>
                     </div>
                     <div class="pre-receita">
-                        <a href="./home.html">
+                        <a href="./Receitas/">
                             <picture>
-                                <img src="./Imagens/panela-quente.png" alt="" width="100px" height="100px">
+                                <img class="figuras" src="./Imagens/torta-de-morango.jpg" alt="" width="100px" height="100px">
                             </picture>
                             <div class="descricao">
-                                <h3>Nome da Receita</h3>
+                                <h5>Torta de morango</h5>
                                 <img id="itemporizador" src="./Imagens/relogio.png" alt="">
                                 <p>60 min</p>
                             </div>
@@ -100,38 +125,38 @@
                 <legend>Receitas Salgadas</legend>
                 <article class="receita">
                     <div class="pre-receita">
-                        <a href="./home.html">
+                        <a href="./Receitas/risoto_camarao.html">
                             <picture>
-                                <img src="./Imagens/panela-quente.png" alt="" width="100px" height="100px">
+                                <img class="figuras" src="./Imagens/Risoto de camarao.jpg" alt="" width="100px" height="100px">
                             </picture>
                             <div class="descricao">
-                                <h3>Nome da Receita</h3>
+                                <h5>Risoto de camarão</h5>
                                 <img id="itemporizador" src="./Imagens/relogio.png" alt="">
-                                <p>60 min</p>
+                                <p>45 min</p>
                             </div>
                         </a>
                     </div>
                     <div class="pre-receita">
-                        <a href="./home.html">
+                        <a href="./Receitas/steak_tartar.html">
                             <picture>
-                                <img src="./Imagens/panela-quente.png" alt="" width="100px" height="100px">
+                                <img class="figuras" src="./Imagens/steak_tartar.jpg" alt="" width="100px" height="100px">
                             </picture>
                             <div class="descricao">
-                                <h3>Nome da Receita</h3>
+                                <h5>Steak tartar</h5>
                                 <img id="itemporizador" src="./Imagens/relogio.png" alt="">
-                                <p>60 min</p>
+                                <p>40 min</p>
                             </div>
                         </a>
                     </div>
                     <div class="pre-receita">
-                        <a href="./home.html">
+                        <a href="./Receitas/massa_fresca.html">
                             <picture>
-                                <img src="./Imagens/panela-quente.png" alt="" width="100px" height="100px">
+                                <img class="figuras" src="./Imagens/massa_fresca.jpg" alt="" width="100px" height="100px">
                             </picture>
                             <div class="descricao">
-                                <h3>Nome da Receita</h3>
+                                <h5>Massa fresca</h5>
                                 <img id="itemporizador" src="./Imagens/relogio.png" alt="">
-                                <p>60 min</p>
+                                <p>50 min</p>
                             </div>
                         </a>
                     </div>
