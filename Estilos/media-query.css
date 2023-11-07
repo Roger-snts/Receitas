@@ -103,4 +103,22 @@
     .carousel-item > img {
         height: 480px;
     }
+
+    /* Página Quem Somos */
+
+    section#quemsomos {
+        width: 90vw;
+    }
+
+    section#quemsomos > div#imagem{
+        float: right;
+        height: 100%;
+        width: 30%;
+    }
+
+    section#quemsomos > div#descricao {
+        float: left;
+        height: 100%;
+        width: 70%;
+    }
 }

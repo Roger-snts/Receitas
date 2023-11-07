@@ -34,6 +34,8 @@ main {
     padding: 2%;
 }
 
+/* Menu principal */
+
 header {
     color: #FF946E !important;
 }
@@ -71,33 +73,7 @@ menu > ul > li:hover {
     background-color: #bf522e;
 }
 
-.slide-controller:nth-child(1):checked ~ .listaSlides{--imagem-selecionada: 0;}
-.slide-controller:nth-child(2):checked ~ .listaSlides{--imagem-selecionada: 1;}
-.slide-controller:nth-child(3):checked ~ .listaSlides{--imagem-selecionada: 2;}
-
-.carrossel {
-    padding: 5px;
-    overflow: hidden;
-    text-align: center;
-}
-
-.listaSlides {
-    --imagens-totais: 3;
-    --imagem-selecionada: 0;
-
-    list-style-type: none;
-    margin: 10px 0;
-    padding: 0;
-
-    position: relative;
-    left: calc(var(--imagem-selecionada) * -100%);
-
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-    width: calc(var(--imagens-totais) * 100%);
-    transition: left 0.6s ease-in-out;
-}
+/* Receitas da página principal */
 
 .figuras {
     border-radius: 30px;
@@ -169,6 +145,26 @@ picture {
 fieldset {
     margin: 10px 5px 10px 0;
 }
+
+/* Página Quem somos */
+
+section#quemsomos {
+    padding: 0px 10px;
+    overflow: hidden;
+
+    transition: width 1s, height 1s;
+}
+
+section#quemsomos > div#imagem {
+    background: #f19191ec url(../Imagens/barman.jpg) no-repeat;
+    background-size: cover;
+    height: 200px;
+    box-shadow: rgb(0, 0, 0) 2px 2px 3px;
+}
+
+
+
+/* Rodapé geral */
 
 footer {
     margin: 3%;
