@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Imagens/Icone.png" type="image/x-icon">
+    <title>Receitas da Lorena - Kafta no espeto</title>
+    <link rel="stylesheet" href="../Estilos/style.css">
+    <link rel="stylesheet" href="../Estilos/media-query.css">
+
+</head>
+<body onresize="alterarTamanho()">
+    <header>
+        <nav id="iMenu">
+            <div id="iLogo">
+                <img src="../Imagens/panela-quente.png" alt="Logo do site - Uma panela com legumes." width="60px" height="60px">
+                <h2 id="titulo">Receitas da Lorena</h2>
+            </div>
+            <span id="iBotaoMenu" class="material-symbols-outlined" onclick="exibirMenu()">menu</span>
+            <menu id="iMenuItens">
+                <ul style="margin: 0px; padding: 0px;">
+                    <li><a href="../home.html">Início</a></li>
+                    <li><a href="../cadastro.html">Nova receita</a></li>
+                    <li><a href="../quem_somos.html">Quem Somos?</a></li>
+                    <li><a href="../contato.html">Entrar em contato</a></li>
+                </ul>
+            </menu>
+        </nav>
+    </header>
+
+    <main>
+        <img height="300px" src="../Imagens/mousse_maracuja.jpg">
+        
+        <article title="Ingredientes" style="background-color: #e0d2cc;">
+            <legend>Ingredientes</legend>
+            <ul style="padding: 0 25px;">
+                <section>
+                    <li>1 envelope de gelatina sem sabor (8 gramas)</li>
+                    <li>5 colheres de sopa de água</li>
+                    <li>1 lata de leite condensado</li>
+                    <li>1 lata de creme de leite</li>
+                    <li>200 ml de suco concentrado de maracujá </li>
+                </section>
+            </ul>
+        </article>
+        <br>
+        <article>
+            <legend>Modo de Preparo</legend>
+            <ol style="padding: 0 25px;">
+                <li>Hidrate a gelatina com a água por 2 minutos, e leve ao micro-ondas por 30 segundos;</li>
+                <li>No liquidificador, bata o leite condensado, o creme de leite e o suco de maracujá até ficar bem homogêneo;</li>
+                <li>Adicione a gelatina hidratada e bata apenas para misturar;</li>
+                <li>Coloque a mistura em uma travessa, cubra com papel filme e leve à geladeira por no mínimo 2 horas.</li>
+                <li>Sirva na travassa ou se preferir, em copinhos. Aproveite!</li>
+            </ol>
+        </article>
+    </main>
+
+    <footer>
+        <p><img src="../imagens/chapeu-chef.png" alt="Chapéu de Chef" height="15px" width="15px"> Site de Receitas criado por Lorena Etiene e Moacir Roger - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../backend.js" defer></script>
+</body>
+</html>
