@@ -1,8 +1,9 @@
-/* Para PC ou tablet */
-@media screen and (min-width: 895px) {
-    @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0");
 
-    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Para tablet */
+@media screen and (min-width: 895px) {
 
     * {
         margin: 0px;
@@ -86,7 +87,128 @@
     }
 
     .material-symbols-outlined {
-        display: none;
+        display: none !important;
+        background-color: #590202;
+        color: beige;
+        width: auto;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+        padding: 7px;
+    }
+    
+    .material-symbols-outlined:hover {
+        background-color: #740303cb;
+    }
+
+    .carousel-item > img {
+        height: 480px;
+    }
+
+    /* Página Quem Somos */
+
+    section#quemsomos {
+        width: 90vw;
+    }
+
+    section#quemsomos > div#imagem{
+        float: right;
+        height: 100%;
+        width: 30%;
+    }
+
+    section#quemsomos > div#descricao {
+        float: left;
+        height: 100%;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        scroll-behavior: smooth;
+    }
+
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;	
+    }
+
+    body {
+        background-color: #f7eee1 !important;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: calc(1.375rem + 1.5vw);
+        font-size: 2em;
+        font-weight: 300;
+        color: #df6f46;
+    }
+
+    h2 {
+        font-size: calc(1rem + 1.2vw);
+    }
+
+    main {
+        margin: 10px;
+        padding: 2%;
+    }
+
+    header {
+        color: #FF946E !important;
+    }
+
+    #iMenu {
+        background-color: #A60303;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 9vh;
+    }
+
+    #iLogo {
+        padding-left: 40px;
+        display: inline-block;
+    }
+
+    #titulo {
+        display: inline-block;
+        padding-left: 15px;
+    }
+
+    menu {
+        display: inline-block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+        cursor: pointer;
+        border-bottom: 2px solid #e09563;
+        border-radius: 10px;
+    }
+
+    menu > ul > li > a {
+        color: white;
+        margin: 10px;
+        text-decoration: none;
+        user-select: none;
+        border-right: 30px;
+        transition: 0.3s;
+    }
+
+    menu > ul > li:hover {
+        background-color: #bf522e;
+    }
+
+    .material-symbols-outlined {
+        display: none !important;
         background-color: #590202;
         color: beige;
         width: auto !important;
@@ -100,8 +222,12 @@
         background-color: #740303cb;
     }
 
+    main#iPrincipal {
+        padding: 0px 10%;
+    }
+
     .carousel-item > img {
-        height: 480px;
+        height: 600px;
     }
 
     /* Página Quem Somos */
