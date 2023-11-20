@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Imagens/Icone.png" type="image/x-icon">
+    <title>Receitas da Lorena - Kafta no espeto</title>
+    <link rel="stylesheet" href="../Estilos/style.css">
+    <link rel="stylesheet" href="../Estilos/media-query.css">
+
+</head>
+<body onresize="alterarTamanho()">
+    <header>
+        <nav id="iMenu">
+            <div id="iLogo">
+                <img src="../Imagens/panela-quente.png" alt="Logo do site - Uma panela com legumes." width="60px" height="60px">
+                <h2 id="titulo">Receitas da Lorena</h2>
+            </div>
+            <span id="iBotaoMenu" class="material-symbols-outlined" onclick="exibirMenu()">menu</span>
+            <menu id="iMenuItens">
+                <ul style="margin: 0px; padding: 0px;">
+                    <li><a href="../home.html">Início</a></li>
+                    <li><a href="../cadastro.html">Nova receita</a></li>
+                    <li><a href="../quem_somos.html">Quem Somos?</a></li>
+                    <li><a href="../contato.html">Entrar em contato</a></li>
+                </ul>
+            </menu>
+        </nav>
+    </header>
+
+    <main>
+        <img height="300px" src="../Imagens/brigadeiro.jpg">
+        
+        <article title="Ingredientes" style="background-color: #e0d2cc;">
+            <legend>Ingredientes</legend>
+            <ul style="padding: 0 25px;">
+                <section>
+                    <li>1 lata de leite condensado</li>
+                    <li>100 ml de creme de leite</li>
+                    <li>1 colher de sopa de manteiga ou margarina</li>
+                    <li>4 colheres de sopa de chocolate em pó 50% cacau</li>
+                    <li>Chocolate granulado para decorar</li>
+                </section>
+            </ul>
+        </article>
+        <br>
+        <article>
+            <legend>Modo de Preparo</legend>
+            <ol style="padding: 0 25px;">
+                <li>Em uma panela em fogo médio, coloque a manteiga e o chocolate em pó;</li>
+                <li>Mexa bem dissolvendo os dois ingredientes;</li>
+                <li>Acrescente o creme de leite e o leite condensado;</li>
+                <li>Misture bem os ingredientes até engrossar e ficar no ponto desejado;</li>
+                <li>Desligue o fogo e deixe esfriar;</li>
+                <li>Enrole os brigadeiros e passe no chocolate granulado. Aproveite!</li>
+            </ol>
+        </article>
+    </main>
+
+    <footer>
+        <p><img src="../imagens/chapeu-chef.png" alt="Chapéu de Chef" height="15px" width="15px"> Site de Receitas criado por Lorena Etiene e Moacir Roger - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../backend.js" defer></script>
+</body>
+</html>
