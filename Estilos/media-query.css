@@ -156,6 +156,8 @@
         font-size: calc(1rem + 1.2vw);
     }
 
+    /* Página principal */
+
     main {
         margin: 10px;
         padding: 2%;
@@ -228,6 +230,14 @@
 
     .carousel-item > img {
         height: 600px;
+    }
+
+    .figuras {
+
+    }
+
+    .descricao {
+        
     }
 
     /* Página Quem Somos */
