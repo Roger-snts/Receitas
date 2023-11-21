@@ -260,7 +260,11 @@
     .descricao {
         display: inline-block;
         align-items: center;
+        height: 150px;
+        line-height: 90px;
+        text-align: center;
         width: 130px;
+        
     }
 
     /* Página Quem Somos */
@@ -286,5 +290,7 @@
     .ftreceita {
         float: right;
         object-fit: cover;
+        right: 400px;
+        width: 636px;
     }
 }
