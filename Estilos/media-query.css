@@ -240,6 +240,7 @@
         border: 2px solid #e98282;
         border-radius: 15px 15px;
         background-color: white;
+        display: inline-flex;    
     }
 
     picture {
