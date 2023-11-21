@@ -232,12 +232,34 @@
         height: 600px;
     }
 
-    .figuras {
+    .pre-receita {
+        margin: 15px;
+        width: 20%;
+        height: 240px;
+    
+        border: 2px solid #e98282;
+        border-radius: 15px 15px;
+        background-color: white;
+    }
+
+    picture {
+        float: left;
+        flex-direction: row;
+        margin: 5px;
+        width: 180px;
 
     }
 
+    .figuras {
+        width: 90%;
+        height: 220px;
+        object-fit: cover;
+    }
+
     .descricao {
-        
+        display: inline-block;
+        align-items: center;
+        width: 130px;
     }
 
     /* Página Quem Somos */
@@ -256,5 +278,12 @@
         float: left;
         height: 100%;
         width: 70%;
+    }
+
+    /* Página de receitas */
+
+    .ftreceita {
+        float: right;
+        object-fit: cover;
     }
 }
