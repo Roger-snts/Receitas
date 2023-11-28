@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0");
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -26,8 +27,8 @@
 
     h1 {
         font-size: calc(1.375rem + 1.5vw);
-        font-size: 2em;
-        font-weight: 300;
+        font-size: large;
+        font-weight: 100;
         color: #df6f46;
     }
 
@@ -178,6 +179,7 @@
     #iLogo {
         padding-left: 40px;
         display: inline-block;
+        height: 60px;
     }
 
     #titulo {
@@ -235,7 +237,7 @@
     .pre-receita {
         margin: 15px;
         width: 20%;
-        height: 240px;
+        height: 180px;
     
         border: 2px solid #e98282;
         border-radius: 15px 15px;
@@ -247,23 +249,23 @@
         float: left;
         flex-direction: row;
         margin: 5px;
-        width: 180px;
+        width: 100px;
 
     }
 
     .figuras {
         width: 90%;
-        height: 220px;
+        height: 170px;
         object-fit: cover;
     }
 
     .descricao {
         display: inline-block;
         align-items: center;
-        height: 150px;
-        line-height: 90px;
+        height: 30px;
+        line-height: 40px;
         text-align: center;
-        width: 130px;
+        width: 100px;
         
     }
 
@@ -288,9 +290,20 @@
     /* Página de receitas */
 
     .ftreceita {
+        
         float: right;
         object-fit: cover;
-        right: 400px;
+        right: 100%;
         width: 636px;
+    }
+
+    .ReceitasPasso{
+        height: 100%;
+    }
+
+    /* Página de Cadastros */
+
+    textarea{
+        row-gap: 100;
     }
 }

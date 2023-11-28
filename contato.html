@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./Imagens/Icone.png" type="image/x-icon">
     <title>Contato</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <link rel="stylesheet" media="screen" href="./Estilos/style.css">
     <link rel="stylesheet" href="./Estilos/media-query.css">
 </head>
@@ -15,26 +17,27 @@
                 <img src="./Imagens/panela-quente.png" alt="Logo do site - Uma panela com legumes." width="60px" height="60px">
                 <h2 id="titulo">Receitas da Lorena</h2>
             </div>
-            <span class="material-symbols-outlined" onclick="exibirMenu()">menu</span>
+            <span id="iBotaoMenu" class="material-symbols-outlined" onclick="exibirMenu()">menu</span>
             <menu id="iMenuItens">
-                <ul>
+                <ul style="margin: 0px; padding: 0px;">
                     <li><a href="./home.html">Início</a></li>
                     <li><a href="./cadastro.html">Nova receita</a></li>
                     <li><a href="./quem_somos.html">Quem Somos?</a></li>
                     <li><a href="./contato.html">Entrar em contato</a></li>
                 </ul>
             </menu>
-        </div>
+        </nav>
     </header>
 
     <main>
         <h1>ENTRE EM CONTATO CONOSCO</h1>
 
         <form action="contato.php">
-            <p><label>Seu email </label><input type="email" name="emailUsuario" id="iemailUsuario"></p><br>
-            <p><label>Telefone </label><input type="telefone" name="telefonelUsuario" id="itelefonelUsuario"></p><br>
-            <p><label>Mensagem </label><input type="text" placeholder="Digite aqui a sua mensagem" size=100%></p><br>
-            
+            <p><label style="padding-right: 25px;">Seu email </label><input type="email" name="emailUsuario" id="iemailUsuario"></p><br>
+            <p><label style="padding-right: 35px;">Telefone </label><input type="telefone" name="telefonelUsuario" id="itelefonelUsuario"></p><br>
+            <p><label>Mensagem </label></p>
+            <textarea name="preparo" id="modo" cols="50" rows="10" required></textarea>
+
             <p><input type="button" onclick="alert('Enviado com sucesso')" value="Enviar"></p><br>
         </form>
         

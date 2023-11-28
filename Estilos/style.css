@@ -173,7 +173,15 @@ section#quemsomos > div#imagem {
     box-shadow: rgb(0, 0, 0) 2px 2px 3px;
 }
 
+/* Página de receitas */
 
+.ftreceita {
+    float: right;
+    object-fit: cover;
+    right: 200px;
+    width: 426px;
+    text-align: left;
+}
 
 /* Rodapé geral */
 
