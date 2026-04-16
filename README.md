@@ -1,4 +1,4 @@
-<img width="92" height="92" alt="image" src="https://github.com/user-attachments/assets/d0b6b769-2f22-400d-a2d5-ba586d2e866b" /># Receitas da Lorena
+# Receitas da Lorena
 
 Modelo de site simples de Receitas.
 
